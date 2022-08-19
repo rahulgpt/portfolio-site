@@ -6,6 +6,7 @@ interface IProject {
   image: StaticImageData;
   title: string;
   description: string;
+  href: string;
 }
 
 const BrowserHead: React.FC = () => (
@@ -22,7 +23,7 @@ const BrowserHead: React.FC = () => (
   </div>
 );
 
-const Project: React.FC<IProject> = ({ image, title, description }) => {
+const Project: React.FC<IProject> = ({ image, title, description, href }) => {
   return (
     <div>
       <div className="mb-5">
@@ -31,7 +32,12 @@ const Project: React.FC<IProject> = ({ image, title, description }) => {
       </div>
       <h2 className="text-lg font-semibold mb-2">{title}</h2>
       <p className="mb-2 text-sm">{description}</p>
-      <a className="underline" href="https://vizsort.netlify.app">
+      <a
+        className="underline"
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View Project
       </a>
     </div>

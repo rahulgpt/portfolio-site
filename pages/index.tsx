@@ -20,9 +20,8 @@ const Home: NextPage = () => {
             Hi there, I am Rahul
           </h1>
           <p className="mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            lobortis feugiat nisi id posuere. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
+            I am computer science student current pursing my bachelors. I am
+            interested web and whole lot of other stuff.
           </p>
           <p className="mb-6">
             Nulla fermentum augue sit amet felis ornare, a luctus dolor mollis.
@@ -30,8 +29,12 @@ const Home: NextPage = () => {
             elit lacus.
           </p>
           <p className="mb-6">Let&apos;s hang out on Twitter.</p>
-          <Button className="mr-4 md:mr-8">View LinkedIn</Button>
-          <Button secondary>View Github</Button>
+          <a href="https://www.linkedin.com/in/rahulgpt28/" target="_blank">
+            <Button className="mr-4 md:mr-8">View LinkedIn</Button>
+          </a>
+          <a href="https://github.com/rahulgpt" target="_blank">
+            <Button secondary>View Github</Button>
+          </a>
         </div>
         <Image
           src={ProfileImage}
@@ -46,11 +49,13 @@ const Home: NextPage = () => {
             image={VizImage}
             title="Sorting Vizualizer"
             description="Sorting vizualizer supports bubble, insertion, selection and quick sort."
+            href="https://vizsort.netlify.app"
           />
           <Project
             image={EcomImage}
             title="Sorting Vizualizer"
             description="Sorting vizualizer supports bubble, insertion, selection and quick sort."
+            href="https://patterns-wa.herokuapp.com"
           />
         </div>
       </section>
