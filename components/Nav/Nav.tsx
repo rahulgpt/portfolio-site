@@ -5,9 +5,9 @@ const Nav: React.FC = () => (
   <nav className="flex justify-between py-4 md:py-8">
     <h1 className="tracking-wider cursor-pointer">RAHUL GUPTA</h1>
     <section className="flex justify-between gap-3">
-      <Link href="#">
+      {/* <Link href="#">
         <a>Projects</a>
-      </Link>
+      </Link> */}
       <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
         Resume
       </a>
@@ -15,7 +15,10 @@ const Nav: React.FC = () => (
       <a href="https://twitter.com/RHGPT" className="md:block hidden">
         Twitter
       </a>
-      <a href="https://twitter.com/RHGPT" className="md:block hidden">
+      <a
+        href="https://www.instagram.com/rahulgpt_/"
+        className="md:block hidden"
+      >
         Instagram
       </a>
       <a href="https://github.com/rahulgpt" className="md:block hidden">

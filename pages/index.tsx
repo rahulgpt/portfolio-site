@@ -6,12 +6,13 @@ import Button from "../components/Button";
 import Project from "../components/Project";
 import VizImage from "../images/vizsort.png";
 import EcomImage from "../images/ecom.png";
+import StrapImage from "../images/strap.png";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Rahul Gupta - portfolio site</title>
+        <title>Rahul Gupta | rahulgpt</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className="my-10 mb-20 flex md:gap-24 gap-10 items-center md:flex-row flex-col-reverse">
@@ -20,19 +21,33 @@ const Home: NextPage = () => {
             Hi there, I am Rahul
           </h1>
           <p className="mb-6">
-            I am computer science student current pursing my bachelors. I am
-            interested web and whole lot of other stuff.
+            I am currently studying for my bachelors in Computer Science at
+            AIETM jaipur. From my childhood I was really into computers and
+            wanted to learn more about them. So I took Computer Science and
+            embarked on a journey to become a <strong>software engineer</strong>
+            .
           </p>
           <p className="mb-6">
-            Nulla fermentum augue sit amet felis ornare, a luctus dolor mollis.
-            Phasellus sed eros velit. Suspendisse eget mauris augue. Nulla a
-            elit lacus.
+            I am always up to learn new and interesting stuff. After trying many
+            things, I really liked <strong>web</strong> and{" "}
+            <strong>low level</strong> development. The last three years I spent
+            learning and building my programming skills and to grow more as a
+            software engineer I am{" "}
+            <strong>looking for full time opportunities</strong> to gain
+            industry experience.
           </p>
-          <p className="mb-6">Let&apos;s hang out on Twitter.</p>
-          <a href="https://www.linkedin.com/in/rahulgpt28/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/rahulgpt28/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button className="mr-4 md:mr-8">View LinkedIn</Button>
           </a>
-          <a href="https://github.com/rahulgpt" target="_blank">
+          <a
+            href="https://github.com/rahulgpt"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button secondary>View Github</Button>
           </a>
         </div>
@@ -53,9 +68,15 @@ const Home: NextPage = () => {
           />
           <Project
             image={EcomImage}
-            title="Sorting Vizualizer"
-            description="Sorting vizualizer supports bubble, insertion, selection and quick sort."
+            title="Patterns"
+            description="Patterns is an Ecommerce Webapp designed to sell and buy digital prints."
             href="https://patterns-wa.herokuapp.com"
+          />
+          <Project
+            image={StrapImage}
+            title="Strap"
+            description="Cli tool for generating react components."
+            href="https://github.com/rahulgpt/strap"
           />
         </div>
       </section>

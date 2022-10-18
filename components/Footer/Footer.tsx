@@ -9,7 +9,7 @@ const Footer: React.FC = () => (
       </p>
       <div className="flex gap-3">
         <a href="https://twitter.com/RHGPT">Twitter</a>
-        <a href="https://twitter.com/RHGPT">Instagram</a>
+        <a href="https://www.instagram.com/rahulgpt_/">Instagram</a>
         <a href="https://github.com/rahulgpt">Github</a>
       </div>
     </div>
