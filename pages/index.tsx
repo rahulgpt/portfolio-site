@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Rahul Gupta | rahulgpt</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className="my-10 mb-20 flex md:gap-24 gap-10 items-center md:flex-row flex-col-reverse">
         <div>
@@ -65,12 +66,14 @@ const Home: NextPage = () => {
             title="Sorting Vizualizer"
             description="Sorting vizualizer supports bubble, insertion, selection and quick sort."
             href="https://vizsort.netlify.app"
+            browserHead
           />
           <Project
             image={EcomImage}
             title="Patterns"
             description="Patterns is an Ecommerce Webapp designed to sell and buy digital prints."
             href="https://patterns-wa.herokuapp.com"
+            browserHead
           />
           <Project
             image={StrapImage}

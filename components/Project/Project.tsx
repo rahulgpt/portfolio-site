@@ -7,6 +7,7 @@ interface IProject {
   title: string;
   description: string;
   href: string;
+  browserHead?: boolean;
 }
 
 const BrowserHead: React.FC = () => (
@@ -23,11 +24,17 @@ const BrowserHead: React.FC = () => (
   </div>
 );
 
-const Project: React.FC<IProject> = ({ image, title, description, href }) => {
+const Project: React.FC<IProject> = ({
+  image,
+  title,
+  description,
+  href,
+  browserHead = false,
+}) => {
   return (
     <div>
       <div className="mb-5">
-        <BrowserHead />
+        {browserHead && <BrowserHead />}
         <Image src={image} />
       </div>
       <h2 className="text-lg font-semibold mb-2">{title}</h2>
