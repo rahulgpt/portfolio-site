@@ -35,18 +35,22 @@ const Project: React.FC<IProject> = ({
     <div>
       <div className="mb-5">
         {browserHead && <BrowserHead />}
-        <Image src={image} />
+        <div className="">
+          <Image src={image} />
+        </div>
       </div>
       <h2 className="text-lg font-semibold mb-2">{title}</h2>
       <p className="mb-2 text-sm">{description}</p>
-      <a
-        className="underline"
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Project
-      </a>
+      {href !== "#" && (
+        <a
+          className="underline"
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project
+        </a>
+      )}
     </div>
   );
 };

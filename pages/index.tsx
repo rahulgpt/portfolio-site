@@ -7,6 +7,12 @@ import Project from "../components/Project";
 import VizImage from "../images/vizsort.png";
 import EcomImage from "../images/ecom.png";
 import StrapImage from "../images/strap.png";
+import Owl from "../images/owl.png";
+import Madstroke from "../images/madstroke.png";
+import PortalRealms from "../images/portal-footer.png";
+import Dolla from "../images/dolla.png";
+import Dapp from "../images/dapp.png";
+import Portfolio from "../images/portfolio.png";
 
 const Home: NextPage = () => {
   return (
@@ -80,6 +86,48 @@ const Home: NextPage = () => {
             title="Strap"
             description="Cli tool for generating react components."
             href="https://github.com/rahulgpt/strap"
+          />
+          <Project
+            image={Owl}
+            title="Owl"
+            description="A general purpose c lib. (in development)"
+            href="https://github.com/rahulgpt/owl"
+            browserHead
+          />
+          <Project
+            image={Madstroke}
+            title="Madstroke"
+            description="A static site for a surface pattern designer."
+            href="https://madstroke.vercel.app/"
+            browserHead
+          />
+          <Project
+            image={PortalRealms}
+            title="Portal Realms"
+            description="A static site for a Decentralized Autonomous Organization (DAO)."
+            href="https://portail-realms.vercel.app/"
+            browserHead
+          />
+          <Project
+            image={Dapp}
+            title="Dapp"
+            description="A decentralized application POC for minting NFTs."
+            href="https://github.com/rahulgpt/dapp"
+            browserHead
+          />
+          <Project
+            image={Dolla}
+            title="Dolla"
+            description="A static site for a banking platform."
+            href="https://dollavirtualbank.netlify.app/"
+            browserHead
+          />
+          <Project
+            image={Portfolio}
+            title="New Portfolio"
+            description="My new portfolio site. (in development)"
+            href="#"
+            browserHead
           />
         </div>
       </section>
