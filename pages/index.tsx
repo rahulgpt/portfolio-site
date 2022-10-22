@@ -13,6 +13,7 @@ import PortalRealms from "../images/portal-footer.png";
 import Dolla from "../images/dolla.png";
 import Dapp from "../images/dapp.png";
 import Portfolio from "../images/portfolio.png";
+import ProminenceLogo from "../images/promi-logo.png";
 
 const Home: NextPage = () => {
   return (
@@ -28,20 +29,26 @@ const Home: NextPage = () => {
             Hi there, I am Rahul
           </h1>
           <p className="mb-6">
-            I am currently studying for my bachelors in Computer Science at
-            AIETM jaipur. From my childhood I was really into computers and
-            wanted to learn more about them. So I took Computer Science and
-            embarked on a journey to become a <strong>software engineer</strong>
-            .
-          </p>
-          <p className="mb-6">
-            I am always up to learn new and interesting stuff. After trying many
-            things, I really liked <strong>web</strong> and{" "}
-            <strong>low level</strong> development. The last three years I spent
-            learning and building my programming skills and to grow more as a
-            software engineer I am{" "}
-            <strong>looking for full time opportunities</strong> to gain
-            industry experience.
+            I am a final year computer science student at AIETM, Jaipur.
+            I&apos;ve always been interested in the technical perspective of the
+            digital things I came across and found myself learning more about
+            it. Recently I&apos;ve had the opportunity of working with an
+            amazing team at{" "}
+            <a
+              href="https://www.promisphere.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold"
+            >
+              <Image
+                src={ProminenceLogo}
+                className="inline-block w-5 mr-1 mb-1 pointer-events-none"
+              />
+              Prominence Games
+            </a>
+            . After years of being a computer science student and having months
+            of industry experience, I got quite familier with web development
+            and now I am open to learning more about other domains.
           </p>
           <a
             href="https://www.linkedin.com/in/rahulgpt28/"
