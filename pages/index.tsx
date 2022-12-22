@@ -85,7 +85,7 @@ const Home: NextPage = () => {
             image={EcomImage}
             title="Patterns"
             description="Patterns is an Ecommerce Webapp designed to sell and buy digital prints."
-            href="https://patterns-wa.herokuapp.com"
+            href="https://patterns.up.railway.app/"
             browserHead
           />
           <Project
