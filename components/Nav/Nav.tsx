@@ -8,20 +8,31 @@ const Nav: React.FC = () => (
       {/* <Link href="#">
         <a>Projects</a>
       </Link> */}
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="umami--click--resume"
+      >
         Resume
       </a>
       <span className="w-2 h-2 bg-gray-300 rounded-full my-auto md:block hidden" />
-      <a href="https://twitter.com/RHGPT" className="md:block hidden">
+      <a
+        href="https://twitter.com/RHGPT"
+        className="md:block hidden umami--click--twitter-social"
+      >
         Twitter
       </a>
       <a
         href="https://www.instagram.com/rahulgpt_/"
-        className="md:block hidden"
+        className="md:block hidden umami--click--instagram-social"
       >
         Instagram
       </a>
-      <a href="https://github.com/rahulgpt" className="md:block hidden">
+      <a
+        href="https://github.com/rahulgpt"
+        className="md:block hidden umami--click--github-social"
+      >
         Github
       </a>
     </section>

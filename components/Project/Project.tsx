@@ -43,7 +43,7 @@ const Project: React.FC<IProject> = ({
       <p className="mb-2 text-sm">{description}</p>
       {href !== "#" && (
         <a
-          className="underline"
+          className={`underline umami--click--${title}`}
           href={href}
           target="_blank"
           rel="noopener noreferrer"

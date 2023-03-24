@@ -38,7 +38,7 @@ const Home: NextPage = () => {
               href="https://www.promisphere.io/"
               target="_blank"
               rel="noreferrer"
-              className="font-semibold"
+              className="font-semibold umami--click--prominence-games-link"
             >
               <Image
                 src={ProminenceLogo}
@@ -55,14 +55,18 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Button className="mr-4 md:mr-8">View LinkedIn</Button>
+            <Button className="mr-4 md:mr-8 umami--click--linkedIn-button">
+              View LinkedIn
+            </Button>
           </a>
           <a
             href="https://github.com/rahulgpt"
             target="_blank"
             rel="noreferrer"
           >
-            <Button secondary>View Github</Button>
+            <Button secondary className="umami--click--github-button">
+              View Github
+            </Button>
           </a>
         </div>
         <Image
