@@ -45,7 +45,8 @@ const Project: React.FC<IProject> = ({
         <a
           className={`underline umami--click--${title
             .split(" ")
-            .join("-")}-project`}
+            .join("-")
+            .toLowerCase()}-project`}
           href={href}
           target="_blank"
           rel="noopener noreferrer"
