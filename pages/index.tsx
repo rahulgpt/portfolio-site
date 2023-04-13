@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/future/image";
-import ProfileImage from "../images/profile-pic.jpg";
+import ProfileImage from "../images/profile-pic.png";
 import Button from "../components/Button";
 import Project from "../components/Project";
 import VizImage from "../images/vizsort.png";
@@ -69,10 +69,7 @@ const Home: NextPage = () => {
             </Button>
           </a>
         </div>
-        <Image
-          src={ProfileImage}
-          className="rounded-full w-32 h-32 md:w-40 md:h-40"
-        />
+        <Image src={ProfileImage} className="rounded-full w-48 h-48" />
       </main>
 
       <section className="mb-16">
