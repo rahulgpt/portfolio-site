@@ -11,9 +11,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Nav />
         <Script
           async
-          defer
-          data-website-id="1ee88476-5feb-41d2-9165-307c722b9765"
-          src="https://hawk.up.railway.app/hawk.js"
+          src="https://analytics.umami.is/script.js"
+          data-website-id="2da8b4e0-b7bd-4069-a792-2aed114a4c2a"
         />
         <Component {...pageProps} />
         <Footer />
