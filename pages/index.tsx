@@ -14,6 +14,7 @@ import Dolla from "../images/dolla.png";
 import Dapp from "../images/dapp.png";
 import Portfolio from "../images/portfolio.png";
 import ProminenceLogo from "../images/promi-logo.png";
+import KrakenImage from "../images/kraken.png";
 
 const Home: NextPage = () => {
   return (
@@ -75,6 +76,13 @@ const Home: NextPage = () => {
       <section className="mb-16">
         <h1 className="text-3xl font-semibold mb-6">Projects</h1>
         <div className="grid md:grid-cols-2 gap-10">
+          <Project
+            image={KrakenImage}
+            title="Kraken"
+            description="A http server written in C."
+            href="https://krakendocs.netlify.app/"
+            browserHead
+          />
           <Project
             image={VizImage}
             title="Sorting Vizualizer"
